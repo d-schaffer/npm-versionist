@@ -1,0 +1,16 @@
+{
+  "name": "get-npm-pkg-versions",
+  "version": "1.0.0",
+  "description": "npm lister",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Dennis",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.10",
+    "nodemon": "^2.0.2",
+    "serve": "^11.3.0"
+  }
+}

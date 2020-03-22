@@ -37,13 +37,13 @@ console.log(package);
 console.log("ENDE");
 
 
-fs.readFile('/package.json', (err, data) => {
+fs.readFile('package.json', (err, data) => {
     if (err)
       console.log(err);
     else {
       var json = JSON.parse(data);
       console.log(json);
-      
+
     //your code using json object
     }
 })

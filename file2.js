@@ -1,5 +1,5 @@
 const core = require('@actions/core');
-const github = require('@actions/github');
+// const github = require('@actions/github');
 
 function run() {
     // console.log("your NPM Verstion: ");
@@ -40,7 +40,7 @@ console.log(packages[1]);
 // console.log(packages);
 
 module.exports = run;
-core.setOutput(run)
+//core.setOutput(run)
 /*try{
     core.setOutput("OUTPUT Funktioniert");
     const payload = JSON.stringify(github.context.payload, undefined, 2)

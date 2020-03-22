@@ -25,8 +25,8 @@ stringi.forEach(function(element) {
         packages.push(element.trim());
     }
 });
-
-console.log(packages[1]);
+const package = packages[1];
+console.log(package);
 
 console.log("ENDE");
 

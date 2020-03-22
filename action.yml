@@ -4,12 +4,11 @@ author: 'Dennis Schaffer'
 outputs:
   node:
     description: 'versions of node Modules'
+  packages: # id of packages
+    description: "the packages"
 runs:
     using: 'node12'
     main: 'index.js'
-outputs: 
-  packages: # id of packages
-    description: "the packages"
 branding:
   icon: 'list'
   color: 'gray-dark'

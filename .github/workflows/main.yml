@@ -3,7 +3,7 @@ on: [push]
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
-    name: A job to list node module versions
+    name: node-versions
     steps:
     - name: 
       id: test

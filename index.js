@@ -2,7 +2,7 @@ const core = require('@actions/core');
 const github = require('@actions/github');
 
 console.log("Versions: ");
-console.log("runs here?");
+
 /*var gnv = require('./file2.js');
 
 gnv();*/ 
@@ -28,8 +28,6 @@ stringi.forEach(function(element) {
 
 console.log(packages[1]);
 
-console.log("test");
-core.setOutput("packages", packages);
+console.log("ENDE");
 
-const payload = JSON.stringify(github.context.payload, undefined, 2)
-console.log(`The event payload: ${payload}`);
+

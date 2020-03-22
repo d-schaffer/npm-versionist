@@ -1,0 +1,12 @@
+name: 'Slack Notify'
+description: 'This action shows you your node module Vestions'
+author: 'Dennis Schaffer'
+outputs:
+  node:
+    description: 'versions of node Modules'
+runs:
+    using: 'node12'
+    main: 'index.js'
+branding:
+  icon: 'list'
+  color: 'gray-dark'

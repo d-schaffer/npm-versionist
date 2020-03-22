@@ -21,6 +21,7 @@ let packages = [];
 // console.log(length(stringi));
 stringi.forEach(function(element) { 
     console.log(element)
+    core.setOutput(element)
     element = element.replace("+--", "");
     // element = element.replace(/[0-9]/g,"");
     // element = element.replace(/\./g,"");
@@ -39,7 +40,8 @@ console.log(packages[1]);
 // console.log(packages);
 
 module.exports = run;
-try{
+core.setOutput(run)
+/*try{
     core.setOutput("OUTPUT Funktioniert");
     const payload = JSON.stringify(github.context.payload, undefined, 2)
     console.log(`The event payload: ${payload}`);
@@ -47,4 +49,4 @@ try{
     core.setFailed(error.message);
 }
 core.setOutput(run);
-core.setOutput("OUTPUT Funktioniert")
+core.setOutput("OUTPUT Funktioniert")*/

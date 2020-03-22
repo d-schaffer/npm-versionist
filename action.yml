@@ -1,4 +1,4 @@
-name: 'Slack Notify'
+name: 'node versions'
 description: 'This action shows you your node module Vestions'
 author: 'Dennis Schaffer'
 outputs:

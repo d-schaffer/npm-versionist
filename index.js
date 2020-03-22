@@ -1,5 +1,8 @@
 const core = require('@actions/core');
 const github = require('@actions/github');
+var fs = require('fs');
+
+// import * as data from './package.json';
 
 console.log("Versions: ");
 
@@ -29,6 +32,17 @@ stringi.forEach(function(element) {
 const package = "Das ist ein STring, warum kann ich keine Arrays ausgeben";
 console.log(package);
 
+//const blaa = data;
+// console.log(blaa); // output 'testing'
 console.log("ENDE");
 
 
+fs.readFile('./package.json', (err, data) => {
+    if (err)
+      console.log(err);
+    else {
+      var json = JSON.parse(data);
+      console.log(json);
+    //your code using json object
+    }
+})

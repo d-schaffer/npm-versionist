@@ -7,5 +7,5 @@ jobs:
     steps:
     - name: 
       id: test
-      uses: d-schaffer/npm-versionist
+      uses: /d-schaffer/npm-versionist@v1
     

@@ -7,5 +7,5 @@ jobs:
     steps:
     - name: 
       id: test
-      uses: actions/node-versions@v1
+      uses: actions/npm-versionist@v1
     

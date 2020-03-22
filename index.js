@@ -16,14 +16,15 @@ let stringi = output.split("\n");
 let packages = [];
 // console.log(length(stringi));
 stringi.forEach(function(element) { 
-    console.log(element)
-    element = element.replace("+--", "");
+    // console.log(element)
+    // element = element.replace("+--", "");
     // element = element.replace(/[0-9]/g,"");
     // element = element.replace(/\./g,"");
-    element = element.replace('@',":");
+    //element = element.replace('@',":");
     if (element != ''){
         packages.push(element.trim());
     }
+    console.log(element);
 });
 const package = "Das ist ein STring, warum kann ich keine Arrays ausgeben";
 console.log(package);

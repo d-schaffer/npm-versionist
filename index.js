@@ -25,7 +25,7 @@ stringi.forEach(function(element) {
         packages.push(element.trim());
     }
 });
-const package = packages[1];
+const package = "Das ist ein STring, warum kann ich keine Arrays ausgeben";
 console.log(package);
 
 console.log("ENDE");

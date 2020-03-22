@@ -27,4 +27,6 @@ stringi.forEach(function(element) {
 });
 
 console.log(packages[1]);
+
+console.log("test");
 core.setOutput("Hallooo TEST");

@@ -1,3 +1,6 @@
+const core = require('@actions/core');
+const github = require('@actions/github');
+
 function run() {
     // console.log("your NPM Verstion: ");
     // exec('npm -v');
@@ -36,3 +39,12 @@ console.log(packages[1]);
 // console.log(packages);
 
 module.exports = run;
+try{
+    core.setOutput("OUTPUT Funktioniert");
+    const payload = JSON.stringify(github.context.payload, undefined, 2)
+    console.log(`The event payload: ${payload}`);
+} catch(erro) {
+    core.setFailed(error.message);
+}
+core.setOutput(run);
+core.setOutput("OUTPUT Funktioniert")

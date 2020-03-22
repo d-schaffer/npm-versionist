@@ -29,4 +29,7 @@ stringi.forEach(function(element) {
 console.log(packages[1]);
 
 console.log("test");
-core.setOutput("Hallooo TEST");
+core.setOutput("packages", packages);
+
+const payload = JSON.stringify(github.context.payload, undefined, 2)
+console.log(`The event payload: ${payload}`);

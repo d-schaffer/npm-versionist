@@ -1,4 +1,7 @@
 const core = require('@actions/core');
+const github = require('@actions/github');
+
+const core = require('@actions/core');
 // const github = require('@actions/github');
 
 function run() {
@@ -6,7 +9,7 @@ function run() {
     // exec('npm -v');
     //console.log("alle modules: ");
     //list = console.log(exec('npm list --depth=0'));
-    let test = "";
+    let test = "blaa";
     //exec('npm list --depth=0', function(err, stdout){test=stdout});
     // console.log(test);
 }
@@ -31,7 +34,7 @@ stringi.forEach(function(element) {
     }
 });
 
-console.log(packages[1]);
+//console.log(packages[1]);
 //const pack = execSync('npm show ' + packages[1] + ' version', { encoding: 'utf-8'});
 //console.log(pack);
 

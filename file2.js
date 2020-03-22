@@ -1,9 +1,15 @@
+const core = require('@actions/core');
+const github = require('@actions/github');
+
+const core = require('@actions/core');
+// const github = require('@actions/github');
+
 function run() {
     // console.log("your NPM Verstion: ");
     // exec('npm -v');
     //console.log("alle modules: ");
     //list = console.log(exec('npm list --depth=0'));
-    let test = "";
+    let test = "blaa";
     //exec('npm list --depth=0', function(err, stdout){test=stdout});
     // console.log(test);
 }
@@ -18,6 +24,7 @@ let packages = [];
 // console.log(length(stringi));
 stringi.forEach(function(element) { 
     console.log(element)
+    core.setOutput(element)
     element = element.replace("+--", "");
     // element = element.replace(/[0-9]/g,"");
     // element = element.replace(/\./g,"");
@@ -27,7 +34,7 @@ stringi.forEach(function(element) {
     }
 });
 
-console.log(packages[1]);
+//console.log(packages[1]);
 //const pack = execSync('npm show ' + packages[1] + ' version', { encoding: 'utf-8'});
 //console.log(pack);
 
@@ -36,3 +43,13 @@ console.log(packages[1]);
 // console.log(packages);
 
 module.exports = run;
+//core.setOutput(run)
+/*try{
+    core.setOutput("OUTPUT Funktioniert");
+    const payload = JSON.stringify(github.context.payload, undefined, 2)
+    console.log(`The event payload: ${payload}`);
+} catch(erro) {
+    core.setFailed(error.message);
+}
+core.setOutput(run);
+core.setOutput("OUTPUT Funktioniert")*/

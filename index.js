@@ -43,7 +43,7 @@ fs.readFile('/package.json', (err, data) => {
     else {
       var json = JSON.parse(data);
       console.log(json);
-
+      
     //your code using json object
     }
 })
